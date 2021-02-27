@@ -1,18 +1,33 @@
-nav ul {
-  list-style-type: none;
-  padding-left: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+nav {
+  text-align: center;
 }
-nav ul li {
+
+#temp {
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+#Home,
+#Gallery {
   display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
 }
-nav ul li ul {
-  margin-left: 50rem;
-  display: inline-block;
+
+#logo {
+  transform: translateY(30px);
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
-nav ul li ul li {
-  margin-left: 0px;
-  margin-right: 10px;
+
+nav ul,
+nav li {
+  display: inline;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -44,10 +59,10 @@ nav ul li ul li {
   text-decoration: none;
   color: black;
   font-size: 1.25rem;
-  font-family: "Poiret One", cursive;
 }
+
 .dec:hover {
-  color: white;
+  font-weight: bold;
 }
 
 body {
@@ -125,18 +140,20 @@ footer {
   margin-bottom: 2rem;
   color: white;
 }
-section h1 {
+#About {
   font-family: "Nanum Myeongjo", serif;
-  font-size: 3rem;
-  padding-top: 5rem;
-}
-section p {
-  font-family: "Roboto";
   font-size: 2rem;
-  text-align: justify;
-  padding-left: 9rem;
-  padding-right: 9rem;
-  padding-bottom: 7rem;
+  padding-top: 2rem;
+}
+#Adec {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
 }
 .bg {
   background-image: url("../images/bg1.jpg");
@@ -164,4 +181,45 @@ section p {
 
 section {
   text-align: center;
+}
+
+.row {
+  display: flex;
+  height: 80%;
+  border: white solid 1.75rem;
+  padding-bottom: 0%;
+}
+
+.column {
+  padding-right: 0;
+  padding-left: 8%;
+  padding-top: 30px;
+  flex: 25%;
+  background-color: rgb(221, 217, 217);
+  height: 25rem;
+}
+
+.coltext {
+  font-family: Nanum Myeongjo;
+  margin-top: 25%;
+  margin-left: -46%;
+}
+
+.check {
+  display: block;
+  margin-top: 1rem;
+  height: 1.5rem;
+  width: 7rem;
+  font-family: montserrat;
+  background-color: 0f00;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.check:hover,
+.check:visited {
+  background-color: #050505;
+  text-decoration: none;
 }
