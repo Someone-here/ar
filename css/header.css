@@ -1,0 +1,22 @@
+#Home,
+#Gallery {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+#Home a, #Gallery a {
+    text-decoration: none;
+    color: black;
+}
+
+#Home a:hover, #Gallery a:hover {
+    font-weight: bold;
+}
+
+#logo {
+  transform: translateY(30px);
+  width: 8rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}

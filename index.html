@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="stylesheet" href="css/header.css">
       <link rel="icon" type="image/png" href="images/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Shivansh</title>
@@ -11,15 +13,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Encode+Sans+Condensed:wght@300&family=Montserrat:wght@200&family=Poiret+One&family=Nanum+Myeongjo&family=Roboto:wght@100&display=swap" rel="stylesheet">
         </head>
         <body>
-          <nav>
-          <div id = "Home">
-            <a href = "index.html" class = "dec">Home</a>
-          </div>
-          <img  id = "logo" src = "images/logo.png" width="173" height="66" alt = "logo">
-          <div id="Gallery">
-            <a href="photos.html" class="dec">Gallery</a>
-          </div>
-          </nav>
+          <div style="text-align: center; padding-bottom: 3.5rem;">
+            <div id = "Home">
+                <a href = "index.html">Home</a>
+            </div>
+            <img  id = "logo" src = "images/logo.png" width="80" height="80" alt = "logo">
+            <div id="Gallery">
+                <a href="photos.html">Gallery</a>
+            </div>
+            </div>
           <img src = "images/bg1.jpg" id="temp">
           <section>
           <h1 id = "About">About</h1>
@@ -30,20 +32,21 @@
             <img src = "images/Bridge_Potrait.jpeg" height="90%" width = "70%">
           </div>
           <div class = "column">
-            <div class = "coltext">
+            <div class = "ltext">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur obcaecati nulla ut error perferendis, vitae quos. Sint, laboriosam maiores? Saepe, tempora nihil.<br>
-            <a  href = "photos.html" class = "check">Check It Out</a>
+            <a href = "photos.html" class = "check">CHECK IT OUT</a>
           </div>
           </div>
         </div>
         <div class = "row">
-          <div class = "column">
-            <div class = "central">
+          <div class = "column" style="z-index: 10;">
+            <div class = "rtext">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur obcaecati nulla ut error perferendis, vitae quos. Sint, laboriosam maiores? Saepe, tempora nihil.
+              <a href = "photos.html" class = "check" style="margin-left: 34rem;">CHECK IT OUT</a>
             </div>
           </div>
-          <div class = "column">
-            <img src="images/Painting_Potrait.jpeg" alt="Painting" height="90%" width = "70%">
+          <div class = "column" style="z-index: 0;">
+            <img src="images/Painting_Potrait.jpeg" alt="Painting" height="90%" width = "70%" style="margin-left: 3rem;">
           </div>
         </div>
         <footer>
