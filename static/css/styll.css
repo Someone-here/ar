@@ -102,7 +102,8 @@ section {
   height: 25rem;
 }
 
-.ltext, .rtext {
+.ltext,
+.rtext {
   font-family: Nanum Myeongjo;
   margin-top: 25%;
 }
@@ -131,4 +132,10 @@ section {
 
 .check:hover {
   background: rgb(104, 95, 95);
+}
+
+iframe {
+  width: 100%;
+  height: 115vh;
+  border: none;
 }

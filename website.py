@@ -1,7 +1,7 @@
 from flask import Flask, redirect, render_template, url_for, request
 
 valid = {
-    "haze": 100,
+    "Haze": 100,
     "bridge": 50,
     "something": 0.1,
     "shivansh": 1000
@@ -14,13 +14,13 @@ def home():
     return render_template("index.html")
 
 @app.route("/Gallery/")
-def Gallery():
+def gallery():
     return render_template("photos.html")
 
 @app.route("/Gallery/<photo>/")
 def product(photo):
     if photo in valid:
-        return render_template("haze.html", name=photo, price=valid[photo])
+        return render_template("picture.html", name=photo, price=valid[photo])
     else:
         return f"<h1>404</h1> \n {photo} was not found"
 
